@@ -28,6 +28,9 @@ namespace BaseCleanArchitecture.Services.IoC
             services.AddScoped(typeof(IBaseEntityService<,>) , typeof(BaseEntityService<,>));
             
             services.AddScoped<IDemoServices, DemoServices>();
+
+            services.AddScoped<ITestDemoServices, TestDemoServices>();
+
             // services.AddScoped<ILoggingService, SentryLogger>(); 
         }
     }
